@@ -14,7 +14,8 @@ The code is split to live in several files to reduce the amount of RAM necessary
 #include"common.hpp"
 #include"expose.hpp"
 
-BOOST_PYTHON_MODULE(minieigen){
+BOOST_PYTHON_MODULE(libfeelpp_minieigen)
+{
 	py::scope().attr("__doc__")="miniEigen is wrapper for a small part of the `Eigen <http://eigen.tuxfamily.org>`_ library. Refer to its documentation for details. All classes in this module support pickling.";
 
 	py::docstring_options docopt;
